@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="/"/>
+  <link href="https://ironnman.github.io/blog/"/>
   <updated>2019-04-13T19:17:49.707Z</updated>
-  <id>/</id>
+  <id>https://ironnman.github.io/blog/</id>
   
   <author>
     <name>wenlin42</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="/2019/04/14/hello-world/"/>
-    <id>/2019/04/14/hello-world/</id>
+    <link href="https://ironnman.github.io/blog/2019/04/14/hello-world/"/>
+    <id>https://ironnman.github.io/blog/2019/04/14/hello-world/</id>
     <published>2019-04-13T19:17:49.706Z</published>
     <updated>2019-04-13T19:17:49.707Z</updated>
     
