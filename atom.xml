@@ -6,7 +6,7 @@
   <link href="/blog/atom.xml" rel="self"/>
   
   <link href="https://ironnman.github.io/blog/"/>
-  <updated>2019-04-17T20:30:11.536Z</updated>
+  <updated>2019-05-03T04:53:44.402Z</updated>
   <id>https://ironnman.github.io/blog/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>从 git 仓库中移除 .* 文件夹</title>
+    <link href="https://ironnman.github.io/blog/2019/05/03/%E4%BB%8E-git-%E4%BB%93%E5%BA%93%E4%B8%AD%E7%A7%BB%E9%99%A4-%E6%96%87%E4%BB%B6%E5%A4%B9/"/>
+    <id>https://ironnman.github.io/blog/2019/05/03/从-git-仓库中移除-文件夹/</id>
+    <published>2019-05-03T04:29:19.000Z</published>
+    <updated>2019-05-03T04:53:44.402Z</updated>
+    
+    <content type="html"><![CDATA[<p>例如文件夹 <code>.idea</code>，默认分支为 <code>master</code>。</p><ol><li><p>配置 .gitignore 文件</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">'.idea'</span> &gt;&gt; .gitignore</span><br></pre></td></tr></table></figure></li><li><p>将 .gitignore 文件上传到远程仓库</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git pull</span><br><span class="line">git add .gitignore</span><br><span class="line">git commit -m <span class="string">"edit .gitignore"</span></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure></li><li><p>删除 git 的 .idea 文件夹</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rm --cached -r .idea</span><br></pre></td></tr></table></figure></li><li><p>同步到远程仓库</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git commit -m <span class="string">"rm .idea"</span></span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;例如文件夹 &lt;code&gt;.idea&lt;/code&gt;，默认分支为 &lt;code&gt;master&lt;/code&gt;。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;配置 .gitignore 文件&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td cl
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Laravel 又拍云上传</title>
